@@ -6,22 +6,22 @@ settings:
 
 dependencies:
   '@reown/appkit-adapter-wagmi':
-    specifier: ^1.3.2
+    specifier: 1.3.2
     version: 1.3.2(@coinbase/wallet-sdk@4.0.3)(@wagmi/connectors@5.3.9)(@wagmi/core@2.14.5)(react@18.3.1)(typescript@5.6.3)(viem@2.21.45)(wagmi@2.12.31)
   '@reown/appkit-siwe':
-    specifier: ^1.3.2
+    specifier: 1.3.2
     version: 1.3.2(react@18.3.1)(typescript@5.6.3)
   nuxt:
-    specifier: ^3.14.159
+    specifier: 3.14.159
     version: 3.14.159(typescript@5.6.3)(vite@5.4.11)
   siwe:
-    specifier: ^2.3.2
+    specifier: 2.3.2
     version: 2.3.2(ethers@6.13.4)
   vue:
-    specifier: latest
+    specifier: 3.5.12
     version: 3.5.12(typescript@5.6.3)
   vue-router:
-    specifier: latest
+    specifier: 4.4.5
     version: 4.4.5(vue@3.5.12)
 
 packages:
@@ -2780,7 +2780,7 @@ packages:
       unenv: 1.10.0
       unplugin: 1.15.0
       vite: 5.4.11
-      vite-node: 2.1.4
+      vite-node: 2.1.5
       vite-plugin-checker: 0.8.0(typescript@5.6.3)(vite@5.4.11)
       vue: 3.5.12(typescript@5.6.3)
       vue-bundle-renderer: 2.1.1
@@ -2904,7 +2904,6 @@ packages:
     dependencies:
       is-glob: 4.0.3
       micromatch: 4.0.8
-      napi-wasm: 1.1.3
     dev: false
     bundledDependencies:
       - napi-wasm
@@ -6140,6 +6139,10 @@ packages:
     engines: {node: '>= 0.4'}
     dev: false
 
+  /es-module-lexer@1.5.4:
+    resolution: {integrity: sha512-MVNK56NiMrOwitFB7cqDwq0CQutbw+0BvLshJSse0MUNU+y1FC3bUS/AQg7oUng+/wKrrki7JfmwtVHkVfPLlw==}
+    dev: false
+
   /esbuild@0.21.5:
     resolution: {integrity: sha512-mg3OPMV4hXywwpoDxu3Qda5xCKQi+vCTZq8S9J/EpkhB2HzKXq4SNFZE3+NK93JYxc8VMSep+lOUSC/RVKaBqw==}
     engines: {node: '>=12'}
@@ -6386,7 +6389,7 @@ packages:
     resolution: {integrity: sha512-an2S5quJMiy5bnZKEf6AkfH/7r8CzHvhchU40gxN+OM6HPhe7Z9T1FUychcf2M9PpPOO0Hf7BAEfJkw2TDIBDw==}
     engines: {node: '>=12.0.0'}
     dependencies:
-      readable-stream: 4.5.2
+      readable-stream: 3.6.2
       webextension-polyfill: 0.10.0
     dev: false
 
@@ -8142,10 +8145,6 @@ packages:
 
   /nanotar@0.1.1:
     resolution: {integrity: sha512-AiJsGsSF3O0havL1BydvI4+wR76sKT+okKRwWIaK96cZUnXqH0uNBOsHlbwZq3+m2BR1VKqHDVudl3gO4mYjpQ==}
-    dev: false
-
-  /napi-wasm@1.1.3:
-    resolution: {integrity: sha512-h/4nMGsHjZDCYmQVNODIrYACVJ+I9KItbG+0si6W/jSjdA9JbWDoU4LLeMXVcEQGHjttI2tuXqDrbGF7qkUHHg==}
     dev: false
 
   /negotiator@0.6.3:
@@ -10697,13 +10696,14 @@ packages:
       vite: 5.4.11
     dev: false
 
-  /vite-node@2.1.4:
-    resolution: {integrity: sha512-kqa9v+oi4HwkG6g8ufRnb5AeplcRw8jUF6/7/Qz1qRQOXHImG8YnLbB+LLszENwFnoBl9xIf9nVdCFzNd7GQEg==}
+  /vite-node@2.1.5:
+    resolution: {integrity: sha512-rd0QIgx74q4S1Rd56XIiL2cYEdyWn13cunYBIuqh9mpmQr7gGS0IxXoP8R6OaZtNQQLyXSWbd4rXKYUbhFpK5w==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     dependencies:
       cac: 6.7.14
       debug: 4.3.7(supports-color@9.4.0)
+      es-module-lexer: 1.5.4
       pathe: 1.1.2
       vite: 5.4.11
     transitivePeerDependencies:
